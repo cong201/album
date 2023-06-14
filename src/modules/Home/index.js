@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../../components/Hero";
-import Products from "../../components/Products";
+import Products from "../../components/ProductCard";
 import FeatureCard from "../../components/FeatureCard";
 import StatCard from "../../components/StatCard";
 
