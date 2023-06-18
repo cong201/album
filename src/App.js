@@ -5,6 +5,8 @@ import Home from './modules/Home';
 import { Router, Route, Routes } from 'react-router-dom'
 import Product from './modules/Product';
 import ProductCard from './components/ProductCard';
+import Products from './modules/Products';
+import CategoryProduct from './modules/CategoryProduct';
 function App() {
   return (
     <div>
@@ -12,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products/:id" element={<Product />} />
-        <Route path='/products' element={<ProductCard />} />
+        <Route path='/products' element={<Products />} />
+        <Route path='/categories/:name' element={<CategoryProduct />} />
         <Route path='*' element={<div>404 not found</div>} />
       </Routes>
       <Footer />
