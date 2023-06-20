@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../../components/Hero";
-import ProductCard from "../../components/ProductCard";
-import Products from "../../components/ProductCard";
-import StatCard from "../../components/StatCard";
+import ProductCart from "../../components/ProductCart";
+import Products from "../../components/ProductCart";
+import StatCart from "../../components/StatCart";
 import Categories from "../../components/Categories"
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
 
     return (
         <>
-            <Hero />
+            {/* <Hero /> */}
             <Categories />
             <div className="flex flex-col text-center w-full mb-20 mt-20">
                 <h2 className="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">PRODUCTS</h2>
@@ -27,12 +27,12 @@ const Home = () => {
             </div>
             {
                 albums.length > 0 ?
-                    <ProductCard albums={albums} />
+                    <ProductCart albums={albums} />
                     :
                     <div>Loading...</div>
             }
             <Products />
-            <StatCard />
+            <StatCart />
         </>
     );
 }

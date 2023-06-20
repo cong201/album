@@ -2,7 +2,7 @@ import { logDOM } from "@testing-library/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ albums = [] }) => {
+const ProductCart = ({ albums = [] }) => {
     return (
         <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
@@ -29,4 +29,4 @@ const ProductCard = ({ albums = [] }) => {
     );
 }
 
-export default ProductCard;
+export default ProductCart;

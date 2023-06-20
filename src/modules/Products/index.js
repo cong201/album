@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import ProductCard from "../../components/ProductCard";
+import ProductCart from "../../components/ProductCart";
 import Categories from "../../components/Categories";
 
 
@@ -23,7 +23,7 @@ const Products = () => {
             </div>
             {
                 albums.length > 0 ?
-                    <ProductCard albums={albums} />
+                    <ProductCart albums={albums} />
                     : <div>Loading...</div>
             }
         </div>

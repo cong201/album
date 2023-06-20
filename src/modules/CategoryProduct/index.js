@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import ProductCard from "../../components/ProductCard"
+import ProductCart from "../../components/ProductCart"
 
 const CategoryProduct = () => {
     const { name } = useParams()
@@ -16,7 +16,7 @@ const CategoryProduct = () => {
     }, [])
     if (albums.length === 0) return <div>Loading....</div>
     return (
-        <ProductCard albums={albums} />
+        <ProductCart albums={albums} />
     )
 }
 
